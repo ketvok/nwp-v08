@@ -40,7 +40,7 @@ BOOL MainDlg::OnInitDialog()
 	struct columnInfo {
 		int mask;
 		int cx;
-		LPSTR pszText;
+		LPTSTR pszText;  // LPTSTR: UNICODE->LPWSTR, !UNICODE->LPSTR
 	};
 
 	// Write column information.
